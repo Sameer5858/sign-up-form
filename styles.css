@@ -84,7 +84,7 @@ input {
   display: flex;
   flex-direction: column;
 }
-}
+
 form > * {
   padding: 30px 30px 0 30px;
 }
@@ -115,7 +115,7 @@ span {
   font-size: 14px;
   color: crimson;
 }
-/* create accound an login section styles */
+/* create account an login section styles */
 .create {
   font-size: 20px;
   background-color: rgb(0, 0, 0, 0.01);
