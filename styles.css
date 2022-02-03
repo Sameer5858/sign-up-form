@@ -2,19 +2,23 @@
   font-family: "Norse";
   src: url("/assets/Norse-Bold.otf");
 }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *::before,
 *::after,
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 body {
   max-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.1);
 }
 main {
   display: flex;
   height: 100vh;
+  background-color: white;
 }
 .bg {
   background-image: url(/assets/background.jpg);
@@ -34,7 +38,7 @@ main {
   height: 15vh;
   justify-content: space-around;
   text-align: center;
-  margin-bottom: 60vh;
+  margin-bottom: 50vh;
 }
 .logo-text {
   font-family: Norse;
@@ -54,15 +58,77 @@ main {
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 5%;
-  margin: 10% 10% 10% 5%;
+  padding: 100px 0 0 0;
 }
 .row {
   display: flex;
   gap: 70px;
-  margin: 5% 0;
 }
 .row > div {
   display: flex;
   flex-direction: column;
+}
+button[type="submit"] {
+  background-color: #596d48;
+  color: white;
+  font-size: 20px;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 30px auto 30px auto;
+}
+.create {
+  font-size: 20px;
+  background-color: rgb(0, 0, 0, 0.01);
+  flex-grow: 1;
+  border-top: 0.1px solid grey;
+  padding-left: 30px;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596d48;
+}
+form > * {
+  padding: 30px 30px 0 30px;
+}
+form {
+  margin-bottom: 50px;
+}
+.para {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  max-width: 75ch;
+}
+.form-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+input {
+  height: 24px;
+  width: 250px;
+  border: 1px solid #e5e7eb;
+  background-color: rgb(255, 249, 254);
+  border-radius: 2px;
+}
+.focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 2px;
+}
+.error {
+  outline: none;
+  border: 1px solid crimson;
+}
+span {
+  font-size: 14px;
+  color: crimson;
 }
