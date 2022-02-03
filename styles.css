@@ -1,3 +1,4 @@
+/* global styles */
 @font-face {
   font-family: "Norse";
   src: url("/assets/Norse-Bold.otf");
@@ -15,11 +16,13 @@ body {
   max-height: 100vh;
   background-color: rgb(0, 0, 0, 0.1);
 }
+/* main styles */
 main {
   display: flex;
   height: 100vh;
   background-color: white;
 }
+/* left image background styles */
 .bg {
   background-image: url(/assets/background.jpg);
   background-repeat: no-repeat;
@@ -54,11 +57,24 @@ main {
   background-repeat: no-repeat;
   background-position: right;
 }
+/* form styles */
 .form {
   flex: 2;
   display: flex;
   flex-direction: column;
   padding: 100px 0 0 0;
+}
+label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+input {
+  height: 24px;
+  width: 250px;
+  border: 1px solid #e5e7eb;
+  background-color: rgb(255, 249, 254);
+  border-radius: 2px;
 }
 .row {
   display: flex;
@@ -68,27 +84,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-button[type="submit"] {
-  background-color: #596d48;
-  color: white;
-  font-size: 20px;
-  padding: 15px 60px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin: 30px auto 30px auto;
-}
-.create {
-  font-size: 20px;
-  background-color: rgb(0, 0, 0, 0.01);
-  flex-grow: 1;
-  border-top: 0.1px solid grey;
-  padding-left: 30px;
-}
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #596d48;
 }
 form > * {
   padding: 30px 30px 0 30px;
@@ -107,18 +102,6 @@ form {
   font-size: 20px;
   font-weight: bold;
 }
-label {
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-input {
-  height: 24px;
-  width: 250px;
-  border: 1px solid #e5e7eb;
-  background-color: rgb(255, 249, 254);
-  border-radius: 2px;
-}
 .focus {
   outline: none;
   border: 1px solid blue;
@@ -131,4 +114,27 @@ input {
 span {
   font-size: 14px;
   color: crimson;
+}
+/* create accound an login section styles */
+.create {
+  font-size: 20px;
+  background-color: rgb(0, 0, 0, 0.01);
+  flex-grow: 1;
+  border-top: 0.1px solid grey;
+  padding-left: 30px;
+}
+button[type="submit"] {
+  background-color: #596d48;
+  color: white;
+  font-size: 20px;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 30px auto 30px auto;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596d48;
 }
